@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./components/Header";
 import NavContainer from "./containers/Nav";
-import Article from "./components/Article";
+import ArticleContainer from "./containers/Article";
 
 
 function App() {
@@ -9,10 +9,10 @@ function App() {
     <div className="App">
 
       <Header></Header>
-            
+
       <NavContainer></NavContainer>
 
-      <Article></Article>
+      <ArticleContainer></ArticleContainer>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import {createStore} from 'redux';
 const initState = {
-    mode:'READ',
+    mode:'WELCOME',
     welcome_content:{
         title : "WEB",
         desc:"Hello, WEB"
@@ -18,7 +18,7 @@ function Reducer(state=initState,action){
         return {...state, mode:action.mode};
     }
     if(action.type === 'READ'){
-        return {...state,mode:'READ',seleted_content_id:action.id};
+        return {...state,mode:'READ',selected_content_id:action.id};
     }
     return state;
 }
