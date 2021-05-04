@@ -19,6 +19,12 @@ function Reducer(state=initState,action){
     }
     if(action.type === 'READ'){
         return {...state,mode:'READ',selected_content_id:action.id};
+    }if(action.type ==='CREATE'){
+        return {...state,mode:'CREATE'}
+    }if(action.type ==='UPDATE'){
+        return {...state,mode:'UPDATE'}
+    }if(action.type ==='DELETE'){
+        return {...state,mode:'DELETE'}
     }
     return state;
 }
