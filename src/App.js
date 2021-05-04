@@ -15,6 +15,8 @@ class App extends Component {
       article = <ReadContainer></ReadContainer>
     }else if(this.props.mode ==='CREATE'){
       article = <CreateContainer></CreateContainer>
+    }else if(this.props.mode ==='WELCOME'){
+      article = <ReadContainer></ReadContainer>
     }
     return (
    
@@ -25,7 +27,8 @@ class App extends Component {
         <NavContainer></NavContainer>
   
         <ControlContainer></ControlContainer>
-          {article}
+
+        {article}
         
       </div>
     );
