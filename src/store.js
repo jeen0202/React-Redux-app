@@ -43,6 +43,22 @@ function Reducer(state=initState,action){
     }
     if(action.type ==='UPDATE'){
         return {...state,mode:'UPDATE'}
+    }if(action.type ==='UPDATE_PROCESS'){        
+        let newContents = [
+            ...state.contents           
+        ];
+        for(let i = 0; i <newContents.length; i++){
+            if(newContents[i].id === action.id){
+                newContents[i].title = action.title;
+                newContents[i].desc = action.desc;
+            }
+        }
+        return {
+            ...state,
+            contents:newContents,            
+            mode:'READ',
+            selected_content_id:action.id
+        }        
     }
     if(action.type ==='DELETE'){
         return {...state,mode:'DELETE'}

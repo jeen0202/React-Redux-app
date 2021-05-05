@@ -6,21 +6,27 @@ export default class Update extends Component {
         desc:this.props.desc,
         id:this.props.id
     }
+    onChangeHandler(e){
+        this.setState({
+            [e.target.name]:e.target.value
+        })
+    }
     render() {
         return(
             <form onSubmit={function(e){
                 e.preventDefault();                
                 this.props.onSubmit(
+                    Number(e.target.id.value),
                     e.target.title.value,
                     e.target.desc.value
                     );
             }.bind(this)}>
                 <input type="hidden" name ="id" value = {this.state.id}></input>
                 <p>
-                    <input type = "text" name ="title" placeholder="TITLE" value = {this.state.title}></input>
+                    <input type = "text" name ="title" onChange={this.onChangeHandler.bind(this)} placeholder="TITLE" value = {this.state.title}></input>
                 </p>
                 <p>
-                    <textarea type = "text" name="desc" placeholder="DESCRIPTION" value = {this.state.desc}></textarea>
+                    <textarea type = "text" name="desc" onChange={this.onChangeHandler.bind(this)} placeholder="DESCRIPTION" value = {this.state.desc}></textarea>
                 </p>
                 <p><input type = "submit"></input></p>
             </form>

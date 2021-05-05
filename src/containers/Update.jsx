@@ -16,10 +16,14 @@ export default connect(
         return{
             title,
             desc,
-            id,
+            id
         }
     },
     function(dispatch){
-        return{}
+        return{
+            onSubmit:function(id,title,desc){
+                dispatch({type:'UPDATE_PROCESS',id,title,desc});
+            }
+        }
     },
 )(Update);
