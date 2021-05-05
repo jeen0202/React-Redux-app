@@ -19,7 +19,7 @@ function Reducer(state=initState,action){
         return {...state, mode:action.mode};
     }
     if(action.type === 'READ'){
-        return {...state,mode:'READ',selected_content_id:action.id};
+        return {...state,mode:'READ',seleted_content_id:action.id};
     }
     if(action.type ==='CREATE'){
         return {...state,mode:'CREATE'}
@@ -60,8 +60,17 @@ function Reducer(state=initState,action){
             selected_content_id:action.id
         }        
     }
-    if(action.type ==='DELETE'){
-        return {...state,mode:'DELETE'}
+    if(action.type ==='DELETE_PROCESS'){
+        var newContents = state.contents.filter(function(e){
+            if(e.id === state.seleted_content_id){
+                return false;
+            }                
+            return true;    
+        })
+        return {
+            ...state,
+            contents:newContents,
+            mode:'WELCOME'}
     }
     return state;
 }
