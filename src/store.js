@@ -1,5 +1,8 @@
 import {createStore} from 'redux';
 import List from "./list.json";
+
+const fs = require('fs')
+
 const initState = {
     mode:'WELCOME',
     welcome_content:{
@@ -35,6 +38,8 @@ function Reducer(state=initState,action){
                 desc:action.desc
             }
         ];
+        const contentsJSON = JSON.stringify(newContents)
+        fs.writeFileSync('./list.json',contentsJSON);        
         return {
             ...state,
             contents:newContents,
