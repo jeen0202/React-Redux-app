@@ -5,7 +5,7 @@ const initState = {
         title : "WEB",
         desc:"Hello, WEB"
     },
-    seleted_content_id:1,
+    selected_content_id:1,
     max_content_id:3,
     contents:[
         {id:1, title:'HTML', desc:'HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.'},
@@ -19,7 +19,7 @@ function Reducer(state=initState,action){
         return {...state, mode:action.mode};
     }
     if(action.type === 'READ'){
-        return {...state,mode:'READ',seleted_content_id:action.id};
+        return {...state,mode:'READ',selected_content_id:action.id};
     }
     if(action.type ==='CREATE'){
         return {...state,mode:'CREATE'}
