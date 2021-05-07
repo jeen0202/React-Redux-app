@@ -1,5 +1,5 @@
 import './App.css';
-import Header from "./components/Header";
+import HeaderContainer from "./containers/Header";
 import NavContainer from "./containers/Nav";
 import ReadContainer from "./containers/Read";
 import ControlContainer from "./containers/Control";
@@ -25,7 +25,7 @@ class App extends Component {
    
       <div className="App">
   
-        <Header></Header>
+        <HeaderContainer></HeaderContainer>
   
         <NavContainer></NavContainer>
   
