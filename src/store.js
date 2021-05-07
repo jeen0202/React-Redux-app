@@ -1,7 +1,7 @@
 import {createStore} from 'redux';
 import List from "./list.json";
 
-const fs = require('fs')
+
 
 const initState = {
     mode:'WELCOME',
@@ -11,6 +11,7 @@ const initState = {
     },
     selected_content_id:1,
     max_content_id:3,
+    header:List.header,
     contents:List.contents,
     // contents:[
     //     {id:1, title:'HTML', desc:'HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.'},
@@ -38,8 +39,8 @@ function Reducer(state=initState,action){
                 desc:action.desc
             }
         ];
-        const contentsJSON = JSON.stringify(newContents)
-        fs.writeFileSync('./list.json',contentsJSON);        
+        
+        
         return {
             ...state,
             contents:newContents,
