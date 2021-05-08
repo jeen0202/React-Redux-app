@@ -1,5 +1,5 @@
 import React, {Component } from 'react'
-
+import './component.css'
 export default class Nav extends Component{
     render(){        
         let tags = [];
@@ -10,7 +10,7 @@ export default class Nav extends Component{
             }}>{d.title}</a></li>)
         }
         return(
-            <nav>
+            <nav className = "Nav">
                 <ol>
                     {tags}
                 </ol>
