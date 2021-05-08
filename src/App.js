@@ -11,9 +11,10 @@ import { Component } from 'react';
 
 class App extends Component {
   render(){
-    let article = null;
+    let article,Control = null;
     if(this.props.mode === 'READ'){
       article = <ReadContainer></ReadContainer>
+      Control = <ControlContainer></ControlContainer>
     }else if(this.props.mode ==='CREATE'){
       article = <CreateContainer></CreateContainer>
     }else if(this.props.mode ==='WELCOME'){
@@ -26,10 +27,10 @@ class App extends Component {
       <div className="App">
   
         <HeaderContainer></HeaderContainer>
-  
+
         <NavContainer></NavContainer>
   
-        <ControlContainer></ControlContainer>
+        {Control}
 
         {article}
         
