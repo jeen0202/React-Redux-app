@@ -2,5 +2,13 @@ body {
     background-color: white;
     color: black;
     margin: 10px;
-    font-family: Arial; 
+    font-family: Arial;     
+}
+.App{
+    display: flex;
+}
+
+.Content{
+    display: block;
+    margin: 10px;
 }

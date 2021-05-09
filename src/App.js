@@ -1,4 +1,5 @@
 import './App.css';
+import './Sidebar';
 import HeaderContainer from "./containers/Header";
 import NavContainer from "./containers/Nav";
 import ReadContainer from "./containers/Read";
@@ -7,6 +8,7 @@ import CreateContainer from './containers/Create';
 import UpdateContainer from './containers/Update';
 import { connect } from 'react-redux';
 import { Component } from 'react';
+import { Sidebar } from './Sidebar';
 
 
 class App extends Component {
@@ -25,15 +27,14 @@ class App extends Component {
     return (
    
       <div className="App">
-  
-        <HeaderContainer></HeaderContainer>
-
-        <NavContainer></NavContainer>
-  
-        {Control}
-
-        {article}
-        
+        <Sidebar width ={300} height = {"100vh"}>
+          <HeaderContainer></HeaderContainer>
+          <NavContainer></NavContainer> 
+        </Sidebar>
+        <div className="Content">
+          {Control}
+          {article}
+        </div>
       </div>
     );
   }
