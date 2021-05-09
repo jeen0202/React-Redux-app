@@ -27,7 +27,7 @@ class App extends Component {
     return (
    
       <div className="App">
-        <Sidebar width ={300} height = {"100vh"}>
+        <Sidebar width ={150} height = {"100vh"}>
           <HeaderContainer></HeaderContainer>
           <NavContainer></NavContainer>          
         </Sidebar>
