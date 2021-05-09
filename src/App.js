@@ -29,10 +29,10 @@ class App extends Component {
       <div className="App">
         <Sidebar width ={300} height = {"100vh"}>
           <HeaderContainer></HeaderContainer>
-          <NavContainer></NavContainer> 
+          <NavContainer></NavContainer>          
         </Sidebar>
         <div className="Content">
-          {Control}
+          {Control}         
           {article}
         </div>
       </div>

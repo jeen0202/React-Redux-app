@@ -5,7 +5,8 @@ export default class Read extends Component{
         return(
             <article>
                 <h2>{this.props.title}</h2>
-                        {this.props.desc}
+                <hr></hr>
+                {this.props.desc}
             </article>
         )
             
