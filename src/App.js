@@ -16,11 +16,15 @@ class App extends Component {
     let article,Control = null;
     if(this.props.mode === 'READ'){
       article = <ReadContainer></ReadContainer>
-      Control = <ControlContainer></ControlContainer>
+      Control = 
+      <div className="Sidebar-right">
+        <ControlContainer></ControlContainer>
+      </div>
     }else if(this.props.mode ==='CREATE'){
       article = <CreateContainer></CreateContainer>
     }else if(this.props.mode ==='WELCOME'){
       article = <ReadContainer></ReadContainer>
+      Control = null;
     }else if(this.props.mode ==='UPDATE'){
       article = <UpdateContainer></UpdateContainer>
     }
@@ -36,10 +40,9 @@ class App extends Component {
         </div>  
         <div className="Content">                  
           {article}
-        </div>
-        <div className="Sidebar-right">
+        </div>        
           {Control} 
-        </div>
+        
               
       </div> 
     );
