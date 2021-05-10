@@ -4,23 +4,33 @@ export default class Control extends Component {
     render()
     {
         return (
-            <pre>
+            <ul>
+                <li>
                 <input type="button" value = "CREATE" onClick={
                     function(e){
                         e.preventDefault();
                         this.props.onClick('CREATE');
-                    }.bind(this)}></input>&nbsp;&nbsp;
+                    }.bind(this)}></input>
+                </li>
+                <li>
                 <input type="button" value = "UPDATE" onClick={
                     function(e){
                         e.preventDefault();
                         this.props.onClick('UPDATE');
                     }.bind(this)
-                }></input>&nbsp;&nbsp;
+                }></input>
+                </li>
+                <li>
                 <input type="button" value = "DELETE" onClick={function(e){
                     e.preventDefault();
                     this.props.onClick('DELETE_PROCESS');
                 }.bind(this)}></input>
-            </pre>
+                </li>
+            </ul>
+                
+                
+
+
         )
     }
 }

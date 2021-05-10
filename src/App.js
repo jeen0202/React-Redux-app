@@ -27,15 +27,21 @@ class App extends Component {
     return (
    
       <div className="App">
-        <Sidebar width ={150} height = {"100vh"}>
+      
+      <div className="Header">
           <HeaderContainer></HeaderContainer>
-          <NavContainer></NavContainer>          
-        </Sidebar>
-        <div className="Content">
-          {Control}         
+        </div> 
+        <div className="Sidebar-left">
+          <NavContainer></NavContainer>
+        </div>  
+        <div className="Content">                  
           {article}
         </div>
-      </div>
+        <div className="Sidebar-right">
+          {Control} 
+        </div>
+              
+      </div> 
     );
   }
 }
