@@ -5,11 +5,11 @@ body {
     font-family: Arial;     
 }
 .App{
-    display: flex;
+    display: flex;    
 }
 
 .Content{
     display: block;
     margin: 10px;
-    width :90%;
+    /*min-width :670px;*/
 }
