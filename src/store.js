@@ -70,7 +70,7 @@ function Reducer(state=initState,action){
     }
     if(action.type ==='DELETE_PROCESS'){
         var newContents = state.contents.filter(function(e){
-            if(e.id === state.seleted_content_id){
+            if(e.id === state.selected_content_id){
                 return false;
             }                
             return true;    
