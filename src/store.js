@@ -6,8 +6,8 @@ import List from "./list.json";
 const initState = {
     mode:'WELCOME',
     welcome_content:{
-        title : "WEB",
-        desc:"Hello, WEB"
+        title : "Open Dictionary",
+        desc:"This is front Page of Dictionary. \n Select title want to know"
     },
     selected_content_id:1,
     max_content_id:3,

@@ -15,25 +15,35 @@
 .Content{
     width: 450px;    
     padding: 20px;
+    min-height: 400px;
     margin-bottom: 20px;
     float: left;
     border: 1px solid #bcbcbc;
 }
 .Sidebar-left{
-    width: 160px;    
+    width: 160px; 
+    min-height: 400px;   
     padding: 20px;
     margin-left:10px;
     margin-right: 20px;
     margin-bottom: 20px;
     float: left;
     border: 1px solid #bcbcbc;
+    border-bottom:none;
 }
 .Sidebar-right {
     width:160px;
+    min-height: 400px;
     padding:20px;    
     margin-bottom:20px;
     margin-right:10px;
     float : right;
-    border : 1px solid #bcbcbc;    
+    border : 1px solid #bcbcbc;
+    border-bottom:none;    
     
+}
+.footer{
+    clear: both;
+    border-top : 1px solid  #bcbcbc;    
+    padding :20px;
 }
