@@ -8,7 +8,7 @@ import CreateContainer from './containers/Create';
 import UpdateContainer from './containers/Update';
 import { connect } from 'react-redux';
 import { Component } from 'react';
-import { Sidebar } from './Sidebar';
+//import { Sidebar } from './Sidebar';
 
 
 class App extends Component {
