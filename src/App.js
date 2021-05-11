@@ -42,8 +42,9 @@ class App extends Component {
           {article}
         </div>        
           {Control} 
-        <div className="footer"></div>
+        <div className="footer">
           <p>Copyright</p>
+          </div>
       </div> 
     );
   }
