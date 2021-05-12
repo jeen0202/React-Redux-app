@@ -7,6 +7,7 @@
     list-style:upper-roman;
     list-style-position: inside;
     font-size:medium;
+
     
 }
 .controlButton {
@@ -27,4 +28,13 @@
 }
 .controlButton:hover{
     background-color: red;
+    transition: 500ms;
+    
+}
+
+a:link{
+    text-decoration: none; color: #646464;
+}
+a:visited{
+    text-decoration: none; color: #646464;
 }

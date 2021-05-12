@@ -36,6 +36,7 @@ class App extends Component {
           <HeaderContainer></HeaderContainer>
         </div> 
         <div className="Sidebar-left">
+        <h3 align="center">TITLE</h3>
           <NavContainer></NavContainer>
         </div>  
         <div className="Content">                  
