@@ -6,10 +6,10 @@ import List from "./list.json";
 const initState = {
     mode:'WELCOME',
     welcome_content:{
-        title : "Open Dictionary",
-        desc:"This is front Page of Dictionary. \n Select title want to know"
+        title : "Welcome",
+        desc:"This is front Page of Wikipedia. \n Choose Title want to know"
     },
-    selected_content_id:1,
+    selected_content_id:0,
     max_content_id:3,
     header:List.header,
     contents:List.contents,
