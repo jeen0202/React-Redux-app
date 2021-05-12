@@ -37,18 +37,21 @@
     background-color: white;
 }
 .Sidebar-right {
-    width:160px;
+    width:150px;
     min-height: 400px;   
     padding: 20px;
     margin-left: 10px;
     margin-right: 20px;
-    margin-top : 20px;
+    
     margin-bottom: none;
     margin-right:10px;
     float : right;
+/*
     border : 2px solid #bcbcbc;
     border-bottom:none;
-    background-color: white;    
+    background-color: white; 
+    margin-top : 20px; 
+*/  
     
 }
 .footer{
